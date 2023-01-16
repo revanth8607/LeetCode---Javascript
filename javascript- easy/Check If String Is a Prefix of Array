@@ -1,0 +1,12 @@
+function isPrefixString(s: string, words: string[]): boolean {
+    let str = "";
+        let t = false;
+        for(let i=0;i<words.length;i++){
+            str = str + words[i];
+            if(str==s){
+                t = true;
+                break;
+            }
+        }
+        return t;
+};
