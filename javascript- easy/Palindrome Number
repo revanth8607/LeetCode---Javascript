@@ -1,0 +1,17 @@
+/**
+ * @param {number} x
+ * @return {boolean}
+ */
+var isPalindrome = function(x) {
+        let s = "";
+        let a = x.toString();
+
+        for(let i=0;i<a.length;i++){
+            s = a.charAt(i)+s;
+        }
+        if(a==s){
+            return true;
+        }else{
+            return false;
+        }
+};
