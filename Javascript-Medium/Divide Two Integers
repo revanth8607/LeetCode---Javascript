@@ -1,0 +1,14 @@
+/**
+ * @param {number} dividend
+ * @param {number} divisor
+ * @return {number}
+ */
+var divide = function(dividend, divisor) {
+        let a = 0;
+        if (dividend == -2147483648 && divisor == -1){
+            a = 2147483647;
+        }else{
+            a = dividend/divisor;
+        }
+        return a;
+};
