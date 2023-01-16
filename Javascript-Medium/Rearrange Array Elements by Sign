@@ -1,0 +1,22 @@
+function rearrangeArray(nums: number[]): number[] {
+    const a = []
+    const b = []   
+        for(let i=0;i<nums.length;i++){
+            if(nums[i]<0){
+                a.push(nums[i]);
+            }else{
+                b.push(nums[i]);
+            }
+        }
+        const c =[]
+        for(let i=0,j=0;i<a.length && j<b.length;i++,j++){
+            c.push(b[i])
+            c.push(a[j])
+        }
+
+        const num = []
+        for(let i=0;i<c.length;i++){
+            num[i] = c[i];
+        }
+        return num;
+};
